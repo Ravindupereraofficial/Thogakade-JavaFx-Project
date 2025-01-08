@@ -2,6 +2,7 @@ package Controllers.signup;
 
 import DB.DBConnection;
 import Models.User;
+import org.jasypt.util.text.BasicTextEncryptor;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -22,6 +23,7 @@ public class SignupController implements SignupService {
         PreparedStatement prepareStm = DBConnection.getInstance().getConnection().prepareStatement(
                 "INSERT INTO users (username, email, password) VALUES (?, ?, ?)"
         );
+
         prepareStm.setString(1, user.getUsername());
         prepareStm.setString(2, user.getEmail());
         prepareStm.setString(3, user.getPassword());

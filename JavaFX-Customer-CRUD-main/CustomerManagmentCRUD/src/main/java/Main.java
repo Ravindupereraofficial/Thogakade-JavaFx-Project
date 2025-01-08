@@ -1,4 +1,5 @@
 import DB.DBConnection;
+import org.jasypt.util.text.BasicTextEncryptor;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -10,6 +11,14 @@ public class Main {
         System.out.println(DBConnection.getInstance().getConnection());
         Starter.main(args);
 
+        String key="12345";
+        BasicTextEncryptor basictextencrypter =  new BasicTextEncryptor();
+        String password="icet123";
+        basictextencrypter.setPassword (key);
+        String encryptpassword=basictextencrypter.encrypt(password);
+        System.out.println(encryptpassword);
 
+        String decryptpassword=basictextencrypter.decrypt(encryptpassword);
+        System.out.println(decryptpassword);
     }
 }
