@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="555.0" prefWidth="698.0" style="-fx-background-color: #C5D3E8;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerManageMainFormController">
+<AnchorPane prefHeight="555.0" prefWidth="698.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerManageMainFormController">
    <children>
       <!-- Header Section -->
       <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#34495e" height="72.0" stroke="BLACK" strokeType="INSIDE" width="698.0" />
