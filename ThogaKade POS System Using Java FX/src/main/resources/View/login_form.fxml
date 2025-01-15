@@ -19,17 +19,10 @@
       <!-- Sidebar -->
       <Rectangle arcHeight="0.0" arcWidth="0.0" fill="#2c3e50" height="439.0" layoutX="-13.0" layoutY="-7.0" stroke="BLACK" width="218.0" />
 
-      <!-- Logo -->
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="50.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../image/icons8-customer-100.png" />
-         </image>
-      </ImageView>
-
       <!-- App Name -->
-      <Label layoutX="31.0" layoutY="116.0" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 18px;" text="Shop Thogakade" textFill="WHITE">
+      <Label layoutX="31.0" layoutY="116.0" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 18px;" text="SHOP THOGAKADE" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="15.0" />
+            <Font name="System Bold" size="24.0" />
          </font></Label>
 
       <!-- Title -->
@@ -68,5 +61,10 @@
 
       <!-- Footer -->
       <Label layoutX="250.0" layoutY="360.0" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 10px;" text="© 2025 Shop Thogakade. All rights reserved." textFill="#bdc3c7" />
+      <ImageView fitHeight="272.0" fitWidth="158.0" layoutX="31.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/undraw_unlock_q1e5-removebg-preview.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
