@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="458.0" prefWidth="800.0" style="-fx-background-color: #C5D3E8;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Dashboard.togakadeDashboardFormController">
    <children>
@@ -23,7 +24,10 @@
          <children>
             <Button onAction="#btnCustomerOnAction" style="-fx-background-color: transparent; -fx-text-fill: #34495e; -fx-font-size: 16; -fx-font-family: 'Segoe UI Semibold'; -fx-padding: 15 20; -fx-alignment: center-left;" text="Customer" />
             <Button onAction="#btnItemFormOnAction" style="-fx-background-color: transparent; -fx-text-fill: #34495e; -fx-font-size: 16; -fx-font-family: 'Segoe UI Semibold'; -fx-padding: 15 20; -fx-alignment: center-left;" text="Item" />
-            <Button fx:id="OrderButtonlbl" onAction="#btnOrderFormAction" style="-fx-background-color: transparent; -fx-text-fill: #34495e; -fx-font-size: 16; -fx-font-family: 'Segoe UI Semibold'; -fx-padding: 15 20; -fx-alignment: center-left;" text="Order" />
+            <Button fx:id="OrderButtonlbl" onAction="#btnOrderFormAction" style="-fx-background-color: transparent; -fx-text-fill: #34495e; -fx-font-size: 16; -fx-font-family: 'Segoe UI Semibold'; -fx-padding: 15 20; -fx-alignment: center-left;" text="Order">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
             <ImageView fitHeight="223.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/undraw_empty-cart_574u-removebg-preview.png" />
