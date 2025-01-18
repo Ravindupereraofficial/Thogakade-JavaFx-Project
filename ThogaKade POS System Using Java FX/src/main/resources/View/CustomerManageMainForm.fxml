@@ -9,10 +9,10 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="555.0" prefWidth="698.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerManageMainFormController">
+<AnchorPane prefHeight="555.0" prefWidth="698.0" style="-fx-background-color: #f4f6f9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerManageMainFormController">
    <children>
       <!-- Header Section -->
-      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#34495e" height="72.0" stroke="BLACK" strokeType="INSIDE" width="698.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#34495e" height="72.0" stroke="BLACK" strokeType="INSIDE" width="698.0" style="-fx-effect: dropshadow(gaussian, #2c3e50, 8, 0.6, 0, 2);" />
       <Label layoutX="217.0" layoutY="23.0" text="Customer Management" textFill="WHITE">
          <font>
             <Font name="Segoe UI Semibold" size="24.0" />
@@ -20,27 +20,27 @@
       </Label>
 
       <!-- Input Fields -->
-      <TextField fx:id="cusId" layoutX="165.0" layoutY="99.0" promptText="Customer ID" style="-fx-background-radius: 5; -fx-padding: 5;" />
-      <TextField fx:id="cusName" layoutX="447.0" layoutY="99.0" promptText="Customer Name" style="-fx-background-radius: 5; -fx-padding: 5;" />
-      <TextField fx:id="cusAddress" layoutX="166.0" layoutY="137.0" promptText="Customer Address" style="-fx-background-radius: 5; -fx-padding: 5;" />
-      <TextField fx:id="cusSalary" layoutX="450.0" layoutY="137.0" promptText="Customer Salary" style="-fx-background-radius: 5; -fx-padding: 5;" />
+      <TextField fx:id="cusId" layoutX="165.0" layoutY="99.0" promptText="Customer ID" style="-fx-background-radius: 10; -fx-padding: 10; -fx-border-color: #bdc3c7; -fx-border-radius: 10;" />
+      <TextField fx:id="cusName" layoutX="447.0" layoutY="99.0" promptText="Customer Name" style="-fx-background-radius: 10; -fx-padding: 10; -fx-border-color: #bdc3c7; -fx-border-radius: 10;" />
+      <TextField fx:id="cusAddress" layoutX="166.0" layoutY="137.0" promptText="Customer Address" style="-fx-background-radius: 10; -fx-padding: 10; -fx-border-color: #bdc3c7; -fx-border-radius: 10;" />
+      <TextField fx:id="cusSalary" layoutX="450.0" layoutY="137.0" promptText="Customer Salary" style="-fx-background-radius: 10; -fx-padding: 10; -fx-border-color: #bdc3c7; -fx-border-radius: 10;" />
 
       <!-- Labels -->
-      <Label layoutX="32.0" layoutY="103.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Customer ID:" />
-      <Label layoutX="31.0" layoutY="141.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Customer Address:" />
-      <Label layoutX="324.0" layoutY="103.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Customer Name:" />
-      <Label layoutX="324.0" layoutY="141.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Customer Salary:" />
+      <Label layoutX="32.0" layoutY="103.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Customer ID:" />
+      <Label layoutX="31.0" layoutY="141.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Customer Address:" />
+      <Label layoutX="324.0" layoutY="103.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Customer Name:" />
+      <Label layoutX="324.0" layoutY="141.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Customer Salary:" />
 
       <!-- Action Buttons -->
-      <Button layoutX="294.0" layoutY="176.0" mnemonicParsing="false" onAction="#searchCustomerOnAction" style="-fx-background-color: #08C2FF; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Search" />
-      <Button layoutX="358.0" layoutY="176.0" mnemonicParsing="false" onAction="#updateCustomerOnAction" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Update" />
-      <Button layoutX="420.0" layoutY="176.0" mnemonicParsing="false" onAction="#deleteCustomerOnAction" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Delete" />
-      <Button layoutX="480.0" layoutY="176.0" mnemonicParsing="false" onAction="#addaCustomerOnAction" style="-fx-background-color: #af7ac5; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Add" />
-      <Button layoutX="529.0" layoutY="176.0" mnemonicParsing="false" onAction="#viewCustomerOnAction" style="-fx-background-color: #95a5a6; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="View" />
-      <Button layoutX="21.0" layoutY="176.0" mnemonicParsing="false" onAction="#btnItemOnAction" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Item CRUD" />
+      <Button layoutX="294.0" layoutY="176.0" mnemonicParsing="false" onAction="#searchCustomerOnAction" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, #2980b9, 5, 0.4, 0, 2);" text="Search" />
+      <Button layoutX="358.0" layoutY="176.0" mnemonicParsing="false" onAction="#updateCustomerOnAction" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, #f39c12, 5, 0.4, 0, 2);" text="Update" />
+      <Button layoutX="420.0" layoutY="176.0" mnemonicParsing="false" onAction="#deleteCustomerOnAction" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, #c0392b, 5, 0.4, 0, 2);" text="Delete" />
+      <Button layoutX="480.0" layoutY="176.0" mnemonicParsing="false" onAction="#addaCustomerOnAction" style="-fx-background-color: #9b59b6; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, #8e44ad, 5, 0.4, 0, 2);" text="Add" />
+      <Button layoutX="529.0" layoutY="176.0" mnemonicParsing="false" onAction="#viewCustomerOnAction" style="-fx-background-color: #7f8c8d; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, #95a5a6, 5, 0.4, 0, 2);" text="View" />
+      <Button layoutX="21.0" layoutY="176.0" mnemonicParsing="false" onAction="#btnItemOnAction" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, #27ae60, 5, 0.4, 0, 2);" text="Item CRUD" />
 
       <!-- Table -->
-      <TableView fx:id="tblCustomer" layoutX="38.0" layoutY="227.0" prefHeight="315.0" prefWidth="635.0" style="-fx-background-color: white; -fx-border-color: #dcdde1; -fx-border-radius: 5;">
+      <TableView fx:id="tblCustomer" layoutX="38.0" layoutY="227.0" prefHeight="315.0" prefWidth="635.0" style="-fx-background-color: white; -fx-border-color: #dcdde1; -fx-border-radius: 10; -fx-effect: dropshadow(gaussian, #bdc3c7, 8, 0.5, 0, 2);">
          <columns>
             <TableColumn fx:id="cusIdCol" prefWidth="127.2" style="-fx-alignment: CENTER;" text="Customer ID" />
             <TableColumn fx:id="cusNameCol" prefWidth="152.0" style="-fx-alignment: CENTER;" text="Customer Name" />
