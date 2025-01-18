@@ -11,4 +11,4 @@ public class Main {
         Starter.main(args);
 
     }
-}miya
+}
